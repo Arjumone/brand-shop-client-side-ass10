@@ -1,17 +1,41 @@
+// import { useEffect, useState } from "react";
+import { useLoaderData } from "react-router-dom";
 import Header from "../../shared/Header/Header";
+import Product from "./Product";
+// import Food from "./Food";
 
 const Home = () => {
+
+  const products = useLoaderData()
+  // const [foods,setFoods]=useState([])
+
+  // useEffect(()=>{
+  //   fetch('/public/brand.json')
+  //   .then(res=>res.json())
+  //   .then(data=>setFoods(data))
+  // },[])
   return (
     <div>
       <Header></Header>
-      <div  className="  max-w-6xl mx-auto p-4 rounded">
-      <div className="card lg:card-side bg-base-100 shadow-xl">
-  <figure><img src="/images/stock/photo-1494232410401-ad00d5433cfa.jpg" alt="Album"/></figure>
+      <div className=" max-w-6xl mx-auto gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {
+          products.map(product=><Product key={product._id} product={product}></Product>)
+        }
+      </div>
+      {/* <div className=" max-w-6xl mx-auto gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-5">
+          {
+            foods.map(food=><Food key={food.id} food={food}></Food>)
+          }
+      </div> */}
+
+      <div  className="  max-w-6xl mx-auto p-4 rounded bg-slate-300 my-2">
+      <div className="card lg:card-side bg-base-100 shadow-xl p-3">
+  <figure><img src="https://i.ibb.co/BLVch1M/detailed-chef-logo-template-23-2148986823.jpg" alt="Album"/></figure>
   <div className="card-body">
-    <h2 className="card-title">New album is released!</h2>
-    <p>Click the button to listen on Spotiwhy app.</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Listen</button>
+    <h2 className="card-title text-2xl font-bold">Crafting Moments, One Plate at a Time</h2>
+    <p>It’s the joy of a child tasting ice cream for the first time, the celebration of love over a candlelit dinner, and the camaraderie shared over a cup of coffee. Each dish and drink is a story, each meal a memory. In every restaurant, café, or online order, there is an opportunity to create an experience that lingers in the hearts of customers.</p>
+    <div className="card-actions ">
+      <button className="btn bg-red-500 text-white">Order Now</button>
     </div>
   </div>
 </div>

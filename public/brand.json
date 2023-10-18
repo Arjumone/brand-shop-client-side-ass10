@@ -1,0 +1,81 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/Tmw2Wd8/pizza-pepperoni-table-140725-5396.jpg",
+      "name": "Spicy Pepperoni Pizza",
+      "brand_name": "Pizza Palace",
+      "type_of_products": "Food",
+      "price": 12.99,
+      "short_description": "Delicious pepperoni pizza with a kick of spice.",
+      "rating": 4.5,
+      "add_button": "Add to Cart",
+      "details_button": "Spice up your day with our Spicy Pepperoni Pizza! Made with fresh dough, zesty tomato sauce, mozzarella cheese, and generous slices of spicy pepperoni, this pizza is a flavor explosion in every bite. Topped with a blend of herbs and spices, it's a perfect choice for spice lovers. Whether you're having a party or a cozy night in, this pizza is sure to satisfy your cravings. Enjoy the bold flavors and order your Spicy Pepperoni Pizza now!",
+      "update_button": "Update"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/jfvYsBM/close-up-view-natural-fresh-detox-water-served-with-tube-mint-orange-brown-background-140725-94445.jpg",
+      "name": "Refreshing Lemonade",
+      "brand_name": "Fresh Sips",
+      "type_of_products": "Beverage",
+      "price": 3.49,
+      "short_description": "Cool and tangy lemonade to quench your thirst.",
+      "rating": 4.2,
+      "add_button": "Add to Cart",
+      "details_button": "Stay cool and refreshed with our Refreshing Lemonade! Squeeze the day with this tangy and sweet drink made from freshly squeezed lemons, pure cane sugar, and filtered water. Each sip is a burst of citrusy goodness, perfect for sunny days or any time you need a thirst-quenching pick-me-up. Our lemonade is made to perfection, striking the ideal balance between tartness and sweetness. It's the ultimate companion for your summer picnics, barbecues, or simply relaxing on the porch. Take a sip and let the refreshing taste of real lemons brighten your day!",
+      "update_button": "Update"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/9hZyNLM/big-mac-burger-with-beef-melted-cheddar-full-white-salad-114579-2311.jpg",
+      "name": "Cheeseburger Deluxe",
+      "brand_name": "Burger Barn",
+      "type_of_products": "Food",
+      "price": 8.99,
+      "short_description": "Juicy cheeseburger with fresh vegetables and special sauce.",
+      "rating": 4.7,
+      "add_button": "Add to Cart",
+      "details_button": "Indulge in the ultimate comfort food experience with our Cheeseburger Deluxe! This mouthwatering burger features a juicy beef patty grilled to perfection, topped with melted cheddar cheese, crisp lettuce, ripe tomatoes, onions, pickles, and our special secret sauce. Sandwiched between a soft, toasted bun, every bite is a symphony of flavors and textures. Whether you're a burger aficionado or just craving a classic, our Cheeseburger Deluxe is sure to satisfy your taste buds. Add a side of fries and your favorite beverage, and you've got a meal that hits all the right notes!",
+      "update_button": "Update"
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/B2jGS90/frappe-drink-with-caramel-nuts-golden-background-ai-generative-123827-24942.jpg",
+      "name": "Hazelnut Latte",
+      "brand_name": "Café Aroma",
+      "type_of_products": "Beverage",
+      "price": 4.99,
+      "short_description": "Rich and creamy latte with a hint of hazelnut flavor.",
+      "rating": 4.3,
+      "add_button": "Add to Cart",
+      "details_button": "Elevate your coffee experience with our Hazelnut Latte! Our expert baristas craft this velvety latte by combining premium espresso with steamed milk and a touch of rich hazelnut syrup. The result is a luxurious coffee drink with a harmonious balance of bold espresso, creamy milk, and the warm, nutty notes of hazelnut. Topped with a swirl of whipped cream and a sprinkle of cocoa powder, it's a delightful treat for your senses. Whether you enjoy it in the morning to start your day or as an indulgent afternoon pick-me-up, our Hazelnut Latte is the perfect blend of comfort and sophistication.",
+      "update_button": "Update"
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/6s713Cw/top-view-sushi-set-with-soy-sauce-chopsticks-wooden-serving-board-176474-3466.jpg",
+      "name": "Sushi Platter",
+      "brand_name": "Sushi Heaven",
+      "type_of_products": "Food",
+      "price": 18.99,
+      "short_description": "Assorted sushi rolls with fresh fish and rice.",
+      "rating": 4.8,
+      "add_button": "Add to Cart",
+      "details_button":  "Embark on a culinary adventure with our Sushi Platter! This exquisite assortment of sushi rolls features the finest ingredients expertly crafted by our sushi chefs. Each roll is a masterpiece, combining premium fresh fish, perfectly seasoned rice, crisp vegetables, and creamy avocado. From classic California rolls to innovative specialty rolls, every bite is a symphony of flavors and textures. Served with wasabi, pickled ginger, and soy sauce, our Sushi Platter offers a delightful balance of savory, sweet, and umami notes. Whether you're a sushi enthusiast or a first-time explorer, this platter is a true delight for your taste buds.",
+      "update_button": "Update"
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/NYbKnT3/summer-fruit-juice-blue-background-23-2148227540.jpg",
+      "name": "Tropical Smoothie",
+      "brand_name": "Smoothie Oasis",
+      "type_of_products": "Beverage",
+      "price": 5.49,
+      "short_description": "Blend of tropical fruits for a refreshing smoothie experience.",
+      "rating": 4.6,
+      "add_button": "Add to Cart",
+      "details_button":  "Escape to the tropics with our Tropical Smoothie! This luscious blend combines ripe bananas, sweet mangoes, tangy pineapples, and creamy coconut milk into a heavenly concoction. Blended to perfection, our Tropical Smoothie is not only delicious but also packed with vitamins and antioxidants. Each sip transports you to a sun-kissed beach, making it the perfect drink to brighten your day. Whether you're craving a healthy breakfast alternative or a refreshing snack, our Tropical Smoothie is your passport to a tropical paradise. Close your eyes, take a sip, and let the tropical flavors whisk you away to relaxation.",
+      "update_button": "Update"
+    }
+  ]
+  
