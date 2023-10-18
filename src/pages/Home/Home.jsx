@@ -1,19 +1,12 @@
-// import { useEffect, useState } from "react";
+
 import { useLoaderData } from "react-router-dom";
 import Header from "../../shared/Header/Header";
 import Product from "./Product";
-// import Food from "./Food";
 
 const Home = () => {
 
   const products = useLoaderData()
-  // const [foods,setFoods]=useState([])
-
-  // useEffect(()=>{
-  //   fetch('/public/brand.json')
-  //   .then(res=>res.json())
-  //   .then(data=>setFoods(data))
-  // },[])
+ 
   return (
     <div>
       <Header></Header>
@@ -22,12 +15,7 @@ const Home = () => {
           products.map(product=><Product key={product._id} product={product}></Product>)
         }
       </div>
-      {/* <div className=" max-w-6xl mx-auto gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-5">
-          {
-            foods.map(food=><Food key={food.id} food={food}></Food>)
-          }
-      </div> */}
-
+    
       <div  className="  max-w-6xl mx-auto p-4 rounded bg-slate-300 my-2">
       <div className="card lg:card-side bg-base-100 shadow-xl p-3">
   <figure><img src="https://i.ibb.co/BLVch1M/detailed-chef-logo-template-23-2148986823.jpg" alt="Album"/></figure>
@@ -45,7 +33,6 @@ const Home = () => {
       <div className="  max-w-6xl mx-auto bg-red-400 p-4 rounded">
         <h2 className=" text-center mb-3 text-2xl font-semibold text-white">World famous Food are here</h2>
       <div className=" grid grid-cols-1 lg:grid-cols-4 gap-2 ">
-      {/* , , Starbucks, PepsiCo, Nestlé, */}
         <div className="card  bg-base-100 shadow-xl image-full">
           <figure>
             <img

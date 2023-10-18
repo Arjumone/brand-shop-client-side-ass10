@@ -145,7 +145,7 @@ const AddProducts = () => {
           
         <input
           type="submit"
-          value="Add Coffee"
+          value="Add to Cart"
           className=" btn btn-block bg-black text-white"
         />
         </div>

@@ -6,7 +6,7 @@ const Footer = () => {
         <div className=' mx-auto flex lg:gap-40 flex-col lg:flex-row'>
         <aside>
           <div className=' flex gap-4 items-center mb-4'>
-          <img className=' rounded-full h-10 w-10' src="http://www.w3.org/2000/svg" alt="" />
+          <img className=' rounded-full h-10 w-10' src="https://i.ibb.co/W5rMKqc/restaurant-tasty-food-logo-design-460848-10307.jpg" alt="" />
           <p className=' text-xl'>Food And Beverage</p>
           </div>
           <p className=''>
