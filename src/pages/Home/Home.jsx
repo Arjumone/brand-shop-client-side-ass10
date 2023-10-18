@@ -6,7 +6,7 @@ import Product from "./Product";
 const Home = () => {
 
   const products = useLoaderData()
- 
+//  console.log(products);
   return (
     <div>
       <Header></Header>
