@@ -6,13 +6,12 @@ import Product from "./Product";
 const Home = () => {
 
   const products = useLoaderData()
-//  console.log(products);
   return (
     <div>
       <Header></Header>
       <div className=" max-w-6xl mx-auto gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {
-          products.map(product=><Product key={product._id} product={product}></Product>)
+          products?.slice(0,6).map(product=><Product key={product._id} product={product}></Product>)
         }
       </div>
     

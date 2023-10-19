@@ -11,12 +11,12 @@ import Home from './pages/Home/Home';
 import Error from './pages/Error/Error';
 import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
-// import MyCart from './pages/MyCart/MyCart';
 import PrivateRoute from './route/PrivateRoute';
 import AddProducts from './pages/AddProducts/AddProducts';
 import AuthProvider from './Provider/AuthProvider';
 import MyCart from './MyCart/MyCart';
 import Product from './pages/Home/Product';
+import Brands from './pages/Brands/Brands';
 
 const router = createBrowserRouter([
   {
@@ -42,8 +42,9 @@ const router = createBrowserRouter([
         element:<PrivateRoute><Product></Product></PrivateRoute>
       },
       {
-        path:'/myCart',
-        element:<PrivateRoute><MyCart></MyCart></PrivateRoute>
+        path:'/brands',
+        element:<PrivateRoute><Brands></Brands></PrivateRoute>,
+        loader:()=>fetch('http://localhost:5000/brands')
       },
       {
         path:'/login',
