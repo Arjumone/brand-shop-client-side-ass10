@@ -1,85 +1,113 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import MainLayout from './MainLayout/MainLayout';
-import Home from './pages/Home/Home';
-import Error from './pages/Error/Error';
-import Login from './pages/Login/Login';
-import Register from './pages/Register/Register';
-import PrivateRoute from './route/PrivateRoute';
-import AddProducts from './pages/AddProducts/AddProducts';
-import AuthProvider from './Provider/AuthProvider';
-import MyCart from './MyCart/MyCart';
-import Product from './pages/Home/Product';
-import Brands from './pages/Brands/Brands';
-import UpdateBrand from './pages/UpdateBrand/UpdateBrand';
-import Details from './pages/Details/Details';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import MainLayout from "./MainLayout/MainLayout";
+import Home from "./pages/Home/Home";
+import Error from "./pages/Error/Error";
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
+import PrivateRoute from "./route/PrivateRoute";
+import AddProducts from "./pages/AddProducts/AddProducts";
+import AuthProvider from "./Provider/AuthProvider";
+import MyCart from "./MyCart/MyCart";
+import Product from "./pages/Home/Product";
+import Brands from "./pages/Brands/Brands";
+import UpdateBrand from "./pages/UpdateBrand/UpdateBrand";
+import Details from "./pages/Details/Details";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
-    errorElement:<Error></Error>,
-    children:[
+    errorElement: <Error></Error>,
+    children: [
       {
-        path:'/',
-        element:<Home></Home>,
-        loader:()=>fetch('http://localhost:5000/products')
+        path: "/",
+        element: <Home></Home>,
+        loader: () =>
+          fetch("https://brand-shop-server-side-taupe.vercel.app/products"),
       },
       {
-        path:'/addProducts',
-        element:<PrivateRoute><AddProducts></AddProducts></PrivateRoute>
+        path: "/addProducts",
+        element: (
+          <PrivateRoute>
+            <AddProducts></AddProducts>
+          </PrivateRoute>
+        ),
       },
       {
-        path:'/carts',
-        element:<PrivateRoute><MyCart></MyCart></PrivateRoute>,
-        loader:()=>fetch('http://localhost:5000/products')
+        path: "/carts",
+        element: (
+          <PrivateRoute>
+            <MyCart></MyCart>
+          </PrivateRoute>
+        ),
+        loader: () =>
+          fetch("https://brand-shop-server-side-taupe.vercel.app/products"),
       },
       {
-        path:'/product',
-        element:<PrivateRoute><Product></Product></PrivateRoute>
+        path: "/product",
+        element: (
+          <PrivateRoute>
+            <Product></Product>
+          </PrivateRoute>
+        ),
       },
       {
-        path:'/brands/:brandName',
-        element:<Brands></Brands>,
-        loader:({params})=>fetch(`http://localhost:5000/products/${params.brandName}`)
+        path: "/brands/:brandName",
+        element: <Brands></Brands>,
+        loader: ({ params }) =>
+          fetch(
+            `https://brand-shop-server-side-taupe.vercel.app/products/${params.brandName}`
+          ),
       },
       {
-        path:'/updateBrand/:id',
-        element:<PrivateRoute><UpdateBrand></UpdateBrand></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/products/details/${params.id}`)
+        path: "/updateBrand/:id",
+        element: (
+          <PrivateRoute>
+            <UpdateBrand></UpdateBrand>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(
+            `https://brand-shop-server-side-taupe.vercel.app/products/details/${params.id}`
+          ),
       },
       {
-        path:'/details/:id',
-        element:<PrivateRoute><Details></Details></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/products/details/${params.id}`)
+        path: "/details/:id",
+        element: (
+          <PrivateRoute>
+            <Details></Details>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(
+            `https://brand-shop-server-side-taupe.vercel.app/products/details/${params.id}`
+          ),
       },
       {
-        path:'/login',
-        element:<Login></Login>
+        path: "/login",
+        element: <Login></Login>,
       },
       {
-        path:'/register',
-        element:<Register></Register>
-      }
-    ]
+        path: "/register",
+        element: <Register></Register>,
+      },
+    ],
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-     
     <AuthProvider>
-    <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </AuthProvider>
-     
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
 
 // client repo:https://github.com/programming-hero-web-course-4/b8a10-brandshop-client-side-Arjumone
 // server repo:https://github.com/programming-hero-web-course-4/b8a10-brandshop-server-side-Arjumone
+
+// live link:https://brand-shop-70ebd.web.app

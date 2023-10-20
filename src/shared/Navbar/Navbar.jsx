@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
-
+import { FaMoon } from "react-icons/fa6";
+import './Navbar.css'
 
 const Navbar = () => {
   const {user,logout} = useContext(AuthContext)
@@ -25,6 +26,7 @@ const Navbar = () => {
     </>
     return (
         <div className="navbar bg-red-500 my-2 rounded-lg text-white text-lg font-bold max-w-6xl mx-auto">
+
           <div className="navbar-start ">
             <div className="dropdown ">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -60,6 +62,7 @@ const Navbar = () => {
         </Link>
         }
         
+      <div><FaMoon className="moon ml-3 text-black"></FaMoon></div>
       </div>
     </div>
 );

@@ -24,7 +24,7 @@ const Register = () => {
           setRegisterError("Please should be al least 6 characters or longer")
           return
         }
-        else if(!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}/.test(password)){
+        else if(!/^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/.test(password)){
           setRegisterError("Password should be one upper case")
         }
 
