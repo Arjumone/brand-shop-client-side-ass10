@@ -2,15 +2,17 @@
 // import { useLoaderData } from "react-router-dom";
 // import { AuthContext } from "../Provider/AuthProvider";
 
+import { useLoaderData } from "react-router-dom";
+
 
 const MyCart = () => {
-  // const {user} = useContext(AuthContext)
-  // // console.log(user);
-  // const carts = useLoaderData()
-  // // console.log(carts);
+
+  const carts = useLoaderData()
+  console.log(carts);
+  
     return (
         <div>
-          my cart  
+          my cart{carts.length}  
         </div>
     );
 };
