@@ -45,7 +45,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: () =>
-          fetch("https://brand-shop-server-side-taupe.vercel.app/products"),
+          fetch("https://brand-shop-server-side-taupe.vercel.app/carts"),
       },
       {
         path: "/product",

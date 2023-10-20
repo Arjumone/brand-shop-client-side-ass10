@@ -1,13 +1,13 @@
-import { useContext } from "react";
-import { useLoaderData } from "react-router-dom";
-import { AuthContext } from "../Provider/AuthProvider";
+// import { useContext } from "react";
+// import { useLoaderData } from "react-router-dom";
+// import { AuthContext } from "../Provider/AuthProvider";
 
 
 const MyCart = () => {
-  const {user} = useContext(AuthContext)
-  console.log(user);
-  const carts = useLoaderData()
-  console.log(carts);
+  // const {user} = useContext(AuthContext)
+  // // console.log(user);
+  // const carts = useLoaderData()
+  // // console.log(carts);
     return (
         <div>
           my cart  
