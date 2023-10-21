@@ -46,6 +46,7 @@ const router = createBrowserRouter([
         ),
         loader: () =>
           fetch("https://brand-shop-server-side-taupe.vercel.app/carts"),
+        // loader: () =>fetch("https://brand-shop-server-side-taupe.vercel.app/carts")
       },
       {
         path: "/product",
