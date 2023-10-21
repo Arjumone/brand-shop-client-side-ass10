@@ -46,7 +46,6 @@ const router = createBrowserRouter([
         ),
         loader: () =>
           fetch("https://brand-shop-server-side-taupe.vercel.app/carts"),
-        // loader: () =>fetch("https://brand-shop-server-side-taupe.vercel.app/carts")
       },
       {
         path: "/product",
@@ -108,7 +107,3 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   </React.StrictMode>
 );
 
-// client repo:https://github.com/programming-hero-web-course-4/b8a10-brandshop-client-side-Arjumone
-// server repo:https://github.com/programming-hero-web-course-4/b8a10-brandshop-server-side-Arjumone
-
-// live link:https://brand-shop-70ebd.web.app

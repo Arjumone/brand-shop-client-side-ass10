@@ -22,7 +22,7 @@ const Navbar = () => {
         <li><NavLink to='/addProducts'>Add Products</NavLink></li>
         <li><NavLink to='/carts'>My Cart</NavLink></li>
         <li><NavLink to='/login'>Login</NavLink></li>
-        {/* <li><NavLink to='/register'>Register</NavLink></li> */}
+        <li><NavLink to='/register'>Register</NavLink></li>
     </>
     return (
         <div className="navbar bg-red-500 my-2 rounded-lg text-white text-lg font-bold max-w-6xl mx-auto">

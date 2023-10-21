@@ -1,14 +1,12 @@
 import Swal from "sweetalert2";
 
 const Cart = ({ cart,updateCard,setUpdateCard }) => {
-    // console.log(updateCard);
-//   console.log(cart);
+  console.log(updateCard);
 const {details}=cart;
+
 const {_id,image,name,brandName,price,rating} =details
-// console.log(details);
 
 const handleDelete =_id =>{
-    console.log(_id);
 
     Swal.fire({
         title: 'Are you sure?',
@@ -20,7 +18,7 @@ const handleDelete =_id =>{
         confirmButtonText: 'Yes, delete it!'
       }).then((result) => {
         if (result.isConfirmed) {
-            fetch(`https://brand-shop-server-side-taupe.vercel.app/carts/${_id}`,{
+            fetch(`https://brand-shop-server-side-taupe.vercel.app/carts/${cart._id}`,{
                 method:"DELETE",
             })
             .then(res=>res.json())

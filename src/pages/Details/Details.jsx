@@ -20,7 +20,7 @@ const Details = () => {
 
   const handleAddToCart = (details, userEmail) => {
     const newCart = { userEmail, details };
-    // console.log(newCart);
+    
     fetch("https://brand-shop-server-side-taupe.vercel.app/carts", {
       method: "POST",
       headers: {
