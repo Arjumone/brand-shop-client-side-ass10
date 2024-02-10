@@ -3,7 +3,7 @@ import Brand from "../Brand/Brand";
 
 const Brands = () => {
     const allBrands = useLoaderData()
-    // console.log(allBrands);
+    console.log(allBrands);
     return (
         <div>
           <div>

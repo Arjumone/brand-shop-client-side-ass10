@@ -2,6 +2,7 @@
 import { useLoaderData } from "react-router-dom";
 import Header from "../../shared/Header/Header";
 import Product from "./Product";
+import CustomerReview from "./CustomerReview";
 
 const Home = () => {
 
@@ -81,6 +82,7 @@ const Home = () => {
         </div>
       </div>
       </div>
+      <CustomerReview></CustomerReview>
     </div>
   );
 };
